@@ -5,33 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI Healthcare Prediction</title>
   <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
   <div class="container">
     <h1>AI Healthcare Prediction</h1>
     <form id="predictForm">
-      <label for="Age">Age:</label>
-      <input type="number" name="Age" required />
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="Age" required />
 
-      <label for="Height_cm">Height (cm):</label>
-      <input type="number" name="Height_cm" required />
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" name="Height_cm" required />
 
-      <label for="Weight_kg">Weight (kg):</label>
-      <input type="number" name="Weight_kg" required />
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" name="Weight_kg" required />
 
-      <label for="BMI">BMI:</label>
-      <input type="number" name="BMI" step="0.1" required />
+      <label for="bmi">BMI:</label>
+      <input type="number" id="bmi" name="BMI" step="0.1" required />
 
-      <label for="Gender">Gender:</label>
-      <select name="Gender" required>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="Gender" required>
         <option value="">--Select--</option>
         <option value="Male">Male</option>
         <option value="Female">Female</option>
       </select>
 
-      <label for="Blood Type">Blood Type:</label>
-      <select name="Blood Type" required>
+      <label for="blood">Blood Type:</label>
+      <select id="blood" name="Blood_Type" required>
         <option value="">--Select--</option>
         <option value="A">A</option>
         <option value="B">B</option>
@@ -39,25 +38,30 @@
         <option value="O">O</option>
       </select>
 
-      <label for="Smoking">Smoking:</label>
-      <select name="Smoking" required>
+      <label for="smoking">Smoking:</label>
+      <select id="smoking" name="Smoking" required>
         <option value="">--Select--</option>
         <option value="No">No</option>
         <option value="Yes">Yes</option>
       </select>
 
-      <label for="Alcohol Status">Alcohol Status:</label>
-      <select name="Alcohol Status" required>
+      <label for="alcohol">Alcohol Status:</label>
+      <select id="alcohol" name="Alcohol_Status" required>
         <option value="">--Select--</option>
         <option value="No">No</option>
         <option value="Yes">Yes</option>
       </select>
 
-      <label for="Symptom">Symptoms (comma-separated):</label>
-      <input type="text" name="Symptom" placeholder="e.g. headache, fever" required />
+      <label for="symptoms">Symptoms (comma-separated):</label>
+      <input type="text" id="symptoms" name="Symptom" placeholder="e.g. headache, fever" required />
 
       <button type="submit">Predict</button>
     </form>
+
+    <!-- Loader element -->
+    <div id="loader" style="display:none; text-align:center; margin-top:20px;">
+      <p>Loading prediction...</p>
+    </div>
 
     <div id="result"></div>
   </div>
