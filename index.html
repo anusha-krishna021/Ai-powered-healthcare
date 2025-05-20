@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Healthcare Prediction</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>AI Healthcare Prediction</h1>
+    <form id="predictForm">
+      <label for="Age">Age:</label>
+      <input type="number" name="Age" required />
+
+      <label for="Height_cm">Height (cm):</label>
+      <input type="number" name="Height_cm" required />
+
+      <label for="Weight_kg">Weight (kg):</label>
+      <input type="number" name="Weight_kg" required />
+
+      <label for="BMI">BMI:</label>
+      <input type="number" name="BMI" step="0.1" required />
+
+      <label for="Gender">Gender:</label>
+      <select name="Gender" required>
+        <option value="">--Select--</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+      <label for="Blood Type">Blood Type:</label>
+      <select name="Blood Type" required>
+        <option value="">--Select--</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="AB">AB</option>
+        <option value="O">O</option>
+      </select>
+
+      <label for="Smoking">Smoking:</label>
+      <select name="Smoking" required>
+        <option value="">--Select--</option>
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select>
+
+      <label for="Alcohol Status">Alcohol Status:</label>
+      <select name="Alcohol Status" required>
+        <option value="">--Select--</option>
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select>
+
+      <label for="Symptom">Symptoms (comma-separated):</label>
+      <input type="text" name="Symptom" placeholder="e.g. headache, fever" required />
+
+      <button type="submit">Predict</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
