@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://e1.pxfuel.com/desktop-wallpaper/729/98/desktop-wallpaper-medical-symbol-colorful-on-dog-medical-symbol.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  color: #004085;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333333;
+  font-weight: bold;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e9f7ef;
+  border-left: 5px solid #28a745;
+  border-radius: 4px;
+  color: #155724;
+}
